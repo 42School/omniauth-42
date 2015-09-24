@@ -1,5 +1,7 @@
 # Omniauth Marvin
 
+[![Build Status](https://travis-ci.org/fakenine/omniauth-marvin.svg)](https://travis-ci.org/fakenine/omniauth-marvin) [![Code Climate](https://codeclimate.com/repos/5603ccdee30ba01582008c19/badges/acaf7e62ac0c254e87ef/gpa.svg)](https://codeclimate.com/repos/5603ccdee30ba01582008c19/feed) [![Coverage Status](https://coveralls.io/repos/fakenine/omniauth-marvin/badge.svg?branch=master&service=github)](https://coveralls.io/github/fakenine/omniauth-marvin?branch=master)
+
 OmniAuth OAuth2 strategy for 42 School.
 
 ## Installation
@@ -20,7 +22,7 @@ Here's an example for adding the middleware to a Rails app in `config/initialize
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :marvin, ENV["42_ID"], ENV["42_SECRET"]
+  provider :marvin, ENV["FT_ID"], ENV["FT_SECRET"]
 end
 ```
 
