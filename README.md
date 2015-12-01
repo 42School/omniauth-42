@@ -9,12 +9,20 @@ OmniAuth OAuth2 strategy for 42 School.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-marvin', github: "fakenine/omniauth-marvin"
+gem 'omniauth-marvin', '~> 1.0.2'
+```
+
+Or, install it yourself like below:
+
+```
+gem install omniauth-marvin
 ```
 
 run `bundle install`
 
 ## Usage
+
+**(Skip this if you want to use the gem with Devise to authenticate users)**
 
 Register your application on 42's intranet to receive an API Key.
 
@@ -28,9 +36,11 @@ end
 
 You can now access the OmniAuth 42 OAuth2 URL: `/auth/marvin`
 
+Read the <a href="https://github.com/intridea/omniauth/wiki" target="_blank">Omniauth Wiki</a> or see this <a href="http://railscasts.com/episodes/241-simple-omniauth" target="_blank">RailsCast</a> for an example on how to use this Rack middleware without any other gem.
+
 ## Devise
 
-If you wish to use this gem with devise, do not use the code snippet above in the Usage section. Instead, follow these steps:
+If you wish to use this gem with devise, do **NOT** use the code snippet above in the Usage section. Instead, follow these steps:
 
 Add the devise gem to your Gemfile.
 
